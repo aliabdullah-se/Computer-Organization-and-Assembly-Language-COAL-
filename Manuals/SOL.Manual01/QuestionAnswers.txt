@@ -1,0 +1,36 @@
+QUESTION ANSWERS FOR THE LISTING FILE:
+
+Q: What is the opcode of the instruction MOV AX, someConstant?
+A: B80500   
+
+Q: Verify the above opcode everywhere this instruction has been used in the program.
+A: Verified
+
+Q: Identify and verify the opcode of MOV BX, someConstant throughout the machine
+code.
+A: BB0A00          
+
+Q: What is the offset of the first instruction?
+A: 00000000 
+
+Q: Why are the offsets of the second and third instructions separated by 3 bytes?
+A: The Ofsets of 2nd 3rd instructions are separated by 3 bytes because these instructions are consuming 6 nibbles of memory in hexadecimal.
+ 
+AFD - DEBUGGER Questions:
+
+Q: What is the value of the IP (Instruction Pointer) register when the program is initially
+loaded? What does this value indicate?
+A: Instruction Pointer (IP) contains the offset/address of the next instruction to be
+executed. For a .COM program, the first instruction begins at offset 0100h because the
+first 256 bytes are occupied by the DOS Program Segment Prefix. Therefore, when you
+see the initial IP in AFD, relate it to [ORG 0x0100].
+
+Q: Record the initial values of the data registers AX, BX, CX & DX.
+A: AX:0000
+   BX:0000
+   CX:0000
+   DX:0000
+
+Q: Press F1 continuously, one instruction at a time, and observe as well as record the
+values of data registers.
+A: Done.

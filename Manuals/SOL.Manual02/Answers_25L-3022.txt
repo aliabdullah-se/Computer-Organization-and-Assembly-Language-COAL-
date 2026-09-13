@@ -1,0 +1,32 @@
+Activity 2 (Answering Theoretical Questions)      (25L-3022)    ALI ABDULLAH     BSE-3B
+---------------------------------------------------------------------------------------------------------------------------------------
+
+i. Which addressing mode is typically the fastest and involves only CPU registers?
+Answer: Register Addressing Mode.
+
+ii. What addressing mode uses a constant or literal value directly within the instruction?
+Answer: Immediate Addressing Mode.
+
+iii. When would you use direct addressing mode in x86 assembly?
+Answer: When you need to access a specific static or global variable whose memory location (offset) is fixed and known at compile-time.
+
+iv. How does indirect addressing mode provide flexibility in accessing data?
+Answer: It allows the target address to be determined dynamically at runtime because the address is stored in a register, which can be modified during program execution.
+
+v. Which registers are commonly used in indirect addressing mode?
+Answer: Base and index registers such as EBX, EBP, ESI, and EDI (or RBX, RBP, RSI, RDI in 64-bit systems).
+
+vi. What addressing mode is ideal for initializing registers with specific values?
+Answer: Immediate Addressing Mode.
+
+vii. In indexed addressing mode, what two components are combined to form the effective address?
+Answer: A base address (constant displacement or label) and the contents of an index register.
+
+viii. Why is indirect addressing mode useful for accessing dynamic data locations?
+Answer: The memory address stored in the register can be altered via arithmetic operations during runtime, allowing a single loop or routine to step through varying pointers or heap locations.
+
+ix. Which addressing mode is particularly suitable for navigating arrays and data structures?
+Answer: Indexed Addressing Mode (or Based-Indexed / Scaled-Indexed Addressing Mode).
+
+x. What is the main benefit of using register addressing mode?
+Answer: High performance and execution speed, as operations are carried out entirely inside the CPU's internal registers without requiring slow access to main memory (RAM).

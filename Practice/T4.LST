@@ -1,0 +1,12 @@
+     1 00000000 0100                    num1: dw 1
+     2 00000002 0A                      num2: db 10
+     3 00000003 0000                    sum: dw 0
+     4                                  
+     5                                  [org 0x0100]
+     6 00000005 A1[0000]                    mov ax, [num1]
+     7 00000008 8A1E[0200]                  mov bl, [num2]
+     8 0000000C 01D8                        add ax, bx
+     9 0000000E A3[0300]                    mov [sum], ax
+    10                                  
+    11 00000011 B8004C                      mov ax, 0x4c00 ; terminate program
+    12 00000014 CD21                        int 0x21

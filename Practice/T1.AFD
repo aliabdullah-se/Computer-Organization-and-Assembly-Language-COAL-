@@ -1,0 +1,17 @@
+     1                                  [org 0x0100]
+     2                                  
+     3 00000000 B80000                  mov ax, 0      ; Clear the accumulator to 0
+     4                                  
+     5                                  ;[YOUR CODE HERE]
+     6 00000003 BB0600                  mov bx, 6      ; storing 6 into bx
+     7 00000006 01D8                    add ax, bx   ;6  ; adding now has 6, 6 times to ax
+     8 00000008 01D8                    add ax, bx   ;12  
+     9 0000000A 01D8                    add ax, bx   ;18
+    10 0000000C 01D8                    add ax, bx   ;24
+    11 0000000E 01D8                    add ax, bx   ;30
+    12 00000010 01D8                    add ax, bx
+    13                                  
+    14                                  
+    15                                  
+    16 00000012 B8004C                  mov ax, 0x4c00 ; Terminate program
+    17 00000015 CD21                    int 0x21
