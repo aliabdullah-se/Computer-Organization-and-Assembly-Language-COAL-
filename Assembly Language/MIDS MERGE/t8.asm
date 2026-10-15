@@ -64,6 +64,6 @@ start:
     push MyArray          ; pushed second -> removed by ret 2
     call RemoveDup
     pop  ax               ; AX = new size = 7
-    mov  [size], ax
+ 
     mov  ax, 0x4c00
     int  0x21
