@@ -50,14 +50,7 @@ fl:
 fdone:
     mov  [bp+6], dx       ; return new size in the size slot
 
-    pop  di
-    pop  si
-    pop  dx
-    pop  cx
-    pop  bx
-    pop  ax
-    pop  bp
-    ret  2                ; removes the address only; size stays on the stack
+                ; removes the address only; size stays on the stack
 
 start:
     push word [size]      ; pushed first -> becomes the return slot
